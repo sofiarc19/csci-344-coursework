@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+} 
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 0fr 0fr;
+}
+section {
+    padding: 3%;
+    margin: 3%;
+    border-style:solid;
+    border-color: rgb(199, 203, 206);
+    display: grid;
+    grid-template-columns: 3fr 1fr
+}
