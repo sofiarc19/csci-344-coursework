@@ -1,0 +1,14 @@
+body {
+    background-color: rgb(184, 118, 200);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+h2, li{
+    display: flex;
+    justify-content: space-around;
+
+}
