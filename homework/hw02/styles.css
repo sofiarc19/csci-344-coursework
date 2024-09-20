@@ -98,16 +98,17 @@ h1.logo {
 ul {
     padding-left: 3%;
     list-style-type: none;
-    display: grid;
-    align-items: start;
+    /* display: grid;
+    align-items: start; */
+    margin-top: 0;
 }
 
 li {
     /* border-style: solid; */
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 1fr;
     justify-items: start;
+    align-items: center;
 }
 
 li img#img2 {
@@ -172,7 +173,7 @@ header#userpost {
 
 
 
-article.post1 p {
+article.post1 p#dots {
     display: grid;
     grid-column-start: 3;
     justify-items: end;
@@ -250,7 +251,20 @@ p.days {
     align-items: center;
 }
 
+input.ques {
+    width:85%;
+    border-style: none;
+    font-size: medium;
+}
 
+/* section.addcomment {
+    border-style: solid; 
+    border-color: gray;
+} */
+
+a.postlink {
+    text-decoration: none;
+}
 
 @media (max-width: 800px) {
     
