@@ -1,18 +1,29 @@
 const defaultTheme = ev => {
-    // your code here.
+        document.querySelector("#default").onclick = () => {
+            document.querySelector("body").classList.toggle('default')
+        }
 };
+
 
 const oceanTheme = ev => {
-   // your code here.
+    document.querySelector("#ocean").onclick = () => {
+        document.querySelector("body").classList.toggle("ocean")
+    }
 };
 
+
 const desertTheme = ev => {
-   // your code here.
+    document.querySelector("#desert").onclick = () => {
+        document.querySelector("body").classList.toggle("desert")
+    }
 };
 
 const highContrastTheme = ev => {
-    // your code here.
-}; 
+    document.querySelector("#high-contrast").onclick = () => {
+        document.querySelector("body").classList.toggle("high-contrast")
+    }
+};
+
 
 /*
     Hints: 

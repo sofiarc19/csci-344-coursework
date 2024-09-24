@@ -1,9 +1,12 @@
 const makeBigger = () => {
-   alert('make bigger!');
+   document.querySelector("p").style.fontSize=("50px")
+   document.querySelector("h1").style.fontSize=("50px")
+   // alert('make bigger!');
 };
 
 const makeSmaller = () => {
-   alert('make smaller!');
+   document.querySelector("p").style.fontSize=("20px")
+   document.querySelector("h1").style.fontSize=("20px")
 };
 
 /*
