@@ -52,7 +52,8 @@ function showPosts(posts) {
     const mainEl = document.querySelector("main");
 
     posts.forEach(post => {
-        const template = `        <section class="bg-white border mb-10">
+        const template = `        
+            <section class="bg-white border mb-10">
             <div class="p-4 flex justify-between">
                 <h3 class="text-lg font-Comfortaa font-bold">${post.user.username}</h3>
                 <button class="icon-button"><i class="fas fa-ellipsis-h"></i></button>
@@ -189,8 +190,8 @@ function showStories(stories){
     const mainEl = document.querySelector("#stories");
     stories.forEach(stories => {
         const template = `
-       
-        <div class="flex flex-col justify-center items-center">
+
+            <div class="flex flex-col justify-center items-center">
                 <img src="https://picsum.photos/50/50?q=${stories.user.image_url}" alt="Profile Picture"
                 class="rounded-full border-4 border-gray-300" />
                 <p class="text-xs text-gray-500">${stories.user.username}</p>
