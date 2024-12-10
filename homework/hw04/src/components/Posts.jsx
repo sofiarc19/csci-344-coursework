@@ -9,7 +9,7 @@ export default function Posts({ token }) {
     // redraws the comment.
     const [posts, setPosts] = useState([]);
 
-    async function getPosts() {
+    async function getPosts() { 
         const data = await getDataFromServer(token, "/api/posts");
         setPosts(data); // state variables setters always redraw the screen
     }

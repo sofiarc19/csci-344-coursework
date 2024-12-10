@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react"; 
+import { getDataFromServer } from "../server-requests"; 
+import Story from "./story"; 
 
-export default function Stories({ token }) {
-    return (
-        <header className="flex gap-6 bg-white border p-2 overflow-hidden mb-6">
-            Stories go here. Fetch data from /api/stories
-        </header>
-    );
-}
+export default function StoryComponent({ token }) { 
+    const [stories, setStories] = useState([]); 
+    
+    async function getStories() { 
+        const data = await getDataFromServer(
+            token, 
+            "/api/stories"); 
+        setStories(data); 
+    } 
+    useEffect(() => { getStories(); }, []); 
+    function outputStory(storyObj) { 
+        return <Story token={token} key={storyObj.id} storyData={storyObj} />; 
+    } 
+        return ( <div> 
+            {stories.map(outputStory)} 
+            </div> 
+            ); 
+    }
